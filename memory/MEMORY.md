@@ -1,3 +1,2 @@
-# Memory index
-- [repo_layout](repo_layout.md) - where exercises and memory live
-- [feedback_small_steps](feedback_small_steps.md) - prefer small, explained changes
+- [Repo layout](repo_layout.md) — where exercises and memory live
+- [ex02 done](project_ex02.md) — ex02 prompt-and-answer finished
