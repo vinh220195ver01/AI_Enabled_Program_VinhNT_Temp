@@ -19,12 +19,17 @@ what you push is public.
 
 ## Governance guard
 Hooks (`.claude/settings.json`) apply the *AI-Enabled QA Governance* register v0.1. They never
-block you; they **record** findings in `governance-checklist.md` as open checkboxes:
-- Before each prompt: your input is scanned. Secrets, keys, connection strings and card numbers
-  are logged as a **VIOLATION** (escalate, AR-06). Restricted or unlisted tools, confidential or
+block you; they **record** findings in `governance-checklist.md`, a table with one row per
+finding (when, severity, where, rule code, issue, what to do; tick `[x]` when handled):
+- Before each prompt: your input is scanned (the prompt text only). Secrets, keys, connection
+  strings and card numbers (digit runs that pass the Luhn check) are logged as a **VIOLATION** (escalate, AR-06). Restricted or unlisted tools, confidential or
   production data and risky behavior are logged as **NEEDS REVIEW** (not an automatic fail).
-- When the agent finishes: its local memory is scanned the same way (one entry per file and rule).
-- Right after, `governance-commit.sh` commits only `governance-checklist.md` and pushes. Other
-  staged files are not touched. If the push fails, it is retried at the next run.
+- When the agent finishes: its local memory is scanned the same way, and so are the repo files
+  that are changed, untracked or in unpushed commits (scripts included; `.claude/hooks/`,
+  `memory/` and binary files are skipped). One entry per file and rule; the file path is
+  recorded, never its content.
+- Right after, `governance-commit.sh` commits only `governance-checklist.md`. Other staged files
+  are not touched. It never pushes: the checklist commit reaches the remote with your own push.
+- Input findings are recorded once per rule per day; memory findings once per file and content.
 Only the rule ID, source and file name are written, never the matched text. The scan is
 pattern-based, a safety net and not a guarantee. Tune it in `.claude/hooks/governance-rules.txt`.
