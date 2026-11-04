@@ -24,4 +24,4 @@ A row marked "flagged again" means the same file and rule was flagged earlier, t
 
 | Done | When | Severity | Found in | Code | Issue | Action |
 |---|---|---|---|---|---|---|
-| [ ] | 2026-11-04 16:32 | VIOLATION | Prompt | D-4 | API key or access token | Remove or mask the data at its source; escalate to Security/Privacy/Data Owner (AR-06) <!-- key:input:2026-11-04:D-4:API key or access token --> |
+| [ ] | 2026-11-04 16:37 | VIOLATION | Prompt | D-4 | API key or access token | Remove or mask the data at its source; escalate to Security/Privacy/Data Owner (AR-06) <!-- key:input:2026-11-04:D-4:API key or access token --> |
