@@ -29,3 +29,4 @@ never the matched text.
 | [ ] | 2026-11-04 10:43 | VIOLATION | Memory: leak.md | D-4 | API key or access token | Remove or mask the data at its source; escalate to Security/Privacy/Data Owner (AR-06) |
 | [ ] | 2026-11-04 10:43 | VIOLATION | Memory: leak.md | D-4 | Password, secret or key assigned a value | Remove or mask the data at its source; escalate to Security/Privacy/Data Owner (AR-06) |
 | [ ] | 2026-11-04 10:43 | VIOLATION | File: exercises/ex06-reverse/reverse.sh | D-4 | Password, secret or key assigned a value | Remove or mask the data at its source; escalate to Security/Privacy/Data Owner (AR-06) |
+| [ ] | 2026-11-04 10:43 | VIOLATION | File: exercises/ex06-reverse/reverse.sh | D-4 | Password, secret or key assigned a value | Remove or mask the data at its source; escalate to Security/Privacy/Data Owner (AR-06) |
