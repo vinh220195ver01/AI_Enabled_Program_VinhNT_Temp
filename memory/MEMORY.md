@@ -1,3 +1,0 @@
-- [Repo layout](repo_layout.md) — where exercises and memory live
-- [ex02 done](project_ex02.md) — ex02 prompt-and-answer finished
-- [bash tests](topics/bash-tests.md) - ex03 test convention
