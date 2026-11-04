@@ -1,0 +1,14 @@
+TC07 - Verify Documentation Version Switcher
+
+Test Steps
+Step	Action	Expected Result
+1	Open https://playwright.dev/docs/intro	Installation documentation page is displayed successfully.
+2	Locate the version dropdown/selector (e.g., displaying "Next" or current version number).	Version selector is visible on the page.
+3	Click the version dropdown.	A list of available versions (e.g., "Next", previous stable versions) is displayed.
+4	Select an older version from the list.	Page navigates to the documentation for the selected version.
+5	Verify the current URL reflects the selected version (e.g., contains a version number/path segment).	URL updates to match the selected version.
+6	Verify a version banner/notice is displayed indicating this is not the latest version.	An outdated-version notice/banner is visible on the page.
+7	Click the link/button to return to the latest version.	Page navigates back to the current/latest documentation version.
+
+Expected Final Result
+The user can successfully switch between different documentation versions, confirm the version-specific URL and banner are correct, and return to the latest version.

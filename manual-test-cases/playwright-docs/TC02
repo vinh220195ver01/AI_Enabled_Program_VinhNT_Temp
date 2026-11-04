@@ -1,0 +1,13 @@
+Test Steps
+Step	Action	Expected Result
+1	Open https://playwright.dev/	Playwright homepage is displayed successfully.
+2	Click the search icon/box (or press Ctrl+K / Cmd+K) in the navigation bar.	The search dialog/modal opens.
+3	Type "assertions" into the search input.	Search results related to "assertions" are displayed in real time.
+4	Verify the search results list contains relevant documentation links (e.g., "Assertions").	At least one relevant result is visible in the list.
+5	Click the first matching result from the search results.	The corresponding documentation page is opened and the search dialog closes.
+6	Verify the current URL contains "/docs/".	URL matches a valid Playwright documentation path.
+7	Verify the page heading matches the topic searched (e.g., "Assertions").	The correct heading is visible on the opened page.
+8	Verify the searched keyword ("assertion") appears within the page content.	Keyword occurrence is found in the page body/content.
+
+Expected Final Result
+The user successfully uses the search feature from the Playwright homepage, selects a relevant result, and is navigated to the correct documentation page containing content related to the search term.

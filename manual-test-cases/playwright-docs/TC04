@@ -1,0 +1,14 @@
+TC04 - Verify Navigation to API Reference Documentation
+
+Test Steps
+Step	Action	Expected Result
+1	Open https://playwright.dev/	Playwright homepage is displayed successfully.
+2	Click the "API" navigation link in the top navigation bar.	The API reference landing page is opened.
+3	Verify the current URL contains "/docs/api/".	URL matches the expected API documentation path.
+4	Verify the page displays a sidebar/menu listing API categories (e.g., "Class: Page", "Class: Browser").	API class categories are visible in the sidebar.
+5	Click the "Class: Page" link from the sidebar.	The Page class API documentation page is opened.
+6	Verify the page heading is "Page".	A "Page" heading is visible.
+7	Verify the page lists method signatures (e.g., "page.click()").	Method signatures/entries are displayed on the page.
+
+Expected Final Result
+The user successfully navigates from the homepage to the API reference section, drills into a specific class (Page), and confirms that its method documentation is displayed correctly.

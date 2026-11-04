@@ -1,0 +1,14 @@
+TC08 - Verify Language Tab Switching in Code Examples
+
+Test Steps
+Step	Action	Expected Result
+1	Open https://playwright.dev/docs/intro	Installation documentation page is displayed successfully.
+2	Locate the language selector tabs above a code block (e.g., "Node.js", "Python", "Java", ".NET").	Language tabs are visible above the code sample.
+3	Verify "Node.js" is selected by default.	Node.js tab is highlighted/active and its code sample is shown.
+4	Click the "Python" language tab.	The code sample updates to display Python-specific installation commands.
+5	Verify the displayed command reflects Python syntax (e.g., "pip install playwright").	Python installation command is visible in the code block.
+6	Scroll to another code block further down the page.	Additional code block is visible.
+7	Verify the language selection ("Python") is remembered/synced across other code blocks on the page.	Other code blocks also display Python examples without needing re-selection.
+
+Expected Final Result
+The user can switch the programming language tab for code samples, the displayed commands update accordingly, and the language preference is consistently applied across multiple code blocks on the page.

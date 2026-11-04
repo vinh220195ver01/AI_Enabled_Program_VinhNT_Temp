@@ -1,0 +1,14 @@
+TC05 - Verify External GitHub Repository Link
+
+Test Steps
+Step	Action	Expected Result
+1	Open https://playwright.dev/	Playwright homepage is displayed successfully.
+2	Locate the GitHub icon/link in the navigation bar.	GitHub link is visible in the navigation bar.
+3	Click the GitHub icon/link.	A new browser tab opens (external navigation).
+4	Verify the new tab's URL matches "https://github.com/microsoft/playwright".	URL matches the expected GitHub repository address.
+5	Verify the new tab's page title contains "playwright".	Correct GitHub repository page is loaded.
+6	Verify the repository page displays the star count element.	Star count/button is visible on the GitHub page.
+7	Close the new tab and switch back to the original Playwright homepage tab.	Original homepage tab is active and unaffected.
+
+Expected Final Result
+The user successfully opens the Playwright GitHub repository via the external navigation link in a new tab, confirms it loads the correct repository, and can return to the original homepage tab without disruption.

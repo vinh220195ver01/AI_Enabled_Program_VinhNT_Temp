@@ -1,0 +1,17 @@
+{
+  "name": "ai-enabled-program",
+  "private": true,
+  "scripts": {
+    "test": "playwright test --pass-with-no-tests",
+    "test:e2e": "playwright test --pass-with-no-tests",
+    "qa:preflight": "node .claude/skills/automation-script-generator/scripts/preflight.mjs",
+    "qa:coverage": "node .claude/skills/automation-script-generator/scripts/preflight.mjs --all",
+    "qa:full": "npm run qa:preflight && npm test",
+    "qa:branch": "node .claude/skills/git-workflow/scripts/sync-and-branch.mjs",
+    "qa:pr": "node .claude/skills/github-pr/scripts/create-pr.mjs",
+    "qa:pr:watch": "node .claude/skills/github-pr/scripts/wait-pr-pipeline.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0"
+  }
+}

@@ -1,0 +1,14 @@
+TC03 - Verify Dark/Light Theme Toggle Functionality
+
+Test Steps
+Step	Action	Expected Result
+1	Open https://playwright.dev/	Playwright homepage is displayed successfully.
+2	Identify the current theme mode (light or dark) via the page's color scheme/background.	Initial theme state is captured correctly.
+3	Click the theme toggle icon in the navigation bar.	The theme switches (light to dark, or dark to light).
+4	Verify the page background and text colors have changed accordingly.	Visual theme change is reflected on the page.
+5	Reload the page (F5).	Page reloads successfully.
+6	Verify the previously selected theme persists after reload.	Theme preference is retained (not reset to default).
+7	Click the theme toggle icon again to revert.	The theme switches back to the original mode.
+
+Expected Final Result
+The user can successfully toggle between light and dark themes, the visual change is applied correctly, and the selected theme preference persists across a page reload.

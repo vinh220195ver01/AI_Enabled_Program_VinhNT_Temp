@@ -1,0 +1,14 @@
+TC06 - Verify Responsive Navigation Menu on Mobile Viewport
+
+Test Steps
+Step	Action	Expected Result
+1	Set the browser viewport to a mobile size (e.g., 375x667).	Viewport is resized successfully.
+2	Open https://playwright.dev/	Playwright homepage is displayed in mobile layout.
+3	Verify the main navigation links (Docs, API, etc.) are hidden/collapsed.	Standard nav bar is not visible; a hamburger/menu icon is shown instead.
+4	Click the hamburger/menu icon.	A mobile navigation drawer/menu expands.
+5	Verify the expanded menu contains the same navigation links as desktop (Docs, API, Community, etc.).	All primary nav links are visible within the mobile menu.
+6	Click the "Docs" link from within the mobile menu.	The documentation page opens and the mobile menu closes.
+7	Verify the page renders correctly in mobile viewport (no horizontal overflow/broken layout).	Page content fits within the mobile viewport width.
+
+Expected Final Result
+The user can successfully access and use the site's full navigation via the collapsed mobile menu, and the resulting page renders correctly on a mobile viewport.

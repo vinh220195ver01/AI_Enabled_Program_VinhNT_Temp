@@ -1,0 +1,14 @@
+TC09 - Verify Footer Community Links Section
+
+Test Steps
+Step	Action	Expected Result
+1	Open https://playwright.dev/	Playwright homepage is displayed successfully.
+2	Scroll down to the footer section of the page.	Footer section is visible.
+3	Verify the footer contains a "Community" column/section with links (e.g., Stack Overflow, Discord, Twitter/X).	Community links are visible in the footer.
+4	Verify the footer contains a "More" or "Learn" column/section with links (e.g., GitHub, YouTube).	Additional resource links are visible in the footer.
+5	Verify the footer contains a copyright notice (e.g., "Copyright © [year] Microsoft").	Copyright text is visible and displays the current year.
+6	Click the "Discord" link in the footer (if present).	A new tab opens navigating to the Discord invite/community page.
+7	Verify the new tab's URL contains "discord".	URL confirms navigation to the correct external community platform.
+
+Expected Final Result
+The user can view all expected footer sections and links, and successfully navigate to an external community platform (Discord) via the footer link.

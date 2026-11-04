@@ -1,0 +1,14 @@
+TC10 - Verify Behavior on Non-Existent Page (404 Handling)
+
+Test Steps
+Step	Action	Expected Result
+1	Open https://playwright.dev/this-page-does-not-exist	Browser attempts to load the non-existent page.
+2	Verify the page displays a 404 error message/indicator (e.g., "Page Not Found").	A clear 404/not-found message is visible.
+3	Verify the page still renders the site's standard navigation bar and/or footer.	Site branding/navigation is present despite the error.
+4	Verify the page provides a link or button to return to the homepage (e.g., "Back to homepage").	A homepage-return link/button is visible.
+5	Click the "Back to homepage" link/button.	User is navigated back to the Playwright homepage.
+6	Verify the current URL is https://playwright.dev/.	URL matches the homepage address.
+7	Verify the homepage loads correctly with expected branding/content.	Playwright homepage displays successfully, confirming recovery from the 404 state.
+
+Expected Final Result
+The user encounters a proper 404 error page when navigating to a non-existent URL, and can successfully recover by navigating back to the homepage via the provided link.

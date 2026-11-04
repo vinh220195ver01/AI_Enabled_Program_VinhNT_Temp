@@ -1,0 +1,14 @@
+Test Steps
+Step	Action	Expected Result
+1	Open https://playwright.dev/	Playwright homepage is displayed successfully.
+2	Verify the page contains the Playwright branding/title.	Playwright branding/title is visible.
+3	Click the Get started navigation link.	The Getting Started documentation page/section is opened.
+4	Click the Installation documentation link.	The Installation documentation page is opened.
+5	Verify the current URL is https://playwright.dev/docs/intro.	URL matches the expected Installation documentation URL.
+6	Verify the page heading is Installation.	An Installation heading is visible.
+7	Verify the page contains the Introduction section.	The Introduction section is visible.
+8	Verify the page contains information about installing Playwright.	Installation instructions are displayed.
+9	Verify the page contains the npm init playwright@latest installation command.	The npm installation command is displayed.
+
+Expected Final Result
+The user successfully navigates from the Playwright homepage to the Installation documentation page, and all expected Installation page content is displayed correctly.
