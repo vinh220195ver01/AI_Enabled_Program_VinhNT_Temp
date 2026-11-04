@@ -15,3 +15,13 @@ never the matched text.
 - [ ] 2026-11-03 23:11 | input | D-5 | NEEDS REVIEW (AR-03/05/07) | Mentions production or real customer data
 - [ ] 2026-11-03 23:13 | memory:leak.md | D-4 | VIOLATION, escalate (AR-06) | API key or access token | key:memory:leak.md:D-4:API key or access token
 - [ ] 2026-11-03 23:13 | memory:leak.md | D-4 | VIOLATION, escalate (AR-06) | Password, secret or key assigned a value | key:memory:leak.md:D-4:Password, secret or key assigned a value
+
+| Done | When | Severity | Found in | Code | Issue | Action |
+|---|---|---|---|---|---|---|
+| [ ] | 2026-11-04 10:27 | VIOLATION | Prompt | D-4 | Password, secret or key assigned a value | Remove or mask the data at its source; escalate to Security/Privacy/Data Owner (AR-06) <!-- key:input:2026-11-04:D-4:Password, secret or key assigned a value --> |
+| [ ] | 2026-11-04 10:27 | NEEDS REVIEW | Prompt | AC-08 | Gemini for Workspace is Needs Review | Check sheet AI Tools; an unapproved tool may only handle public or synthetic data (AR-03) <!-- key:input:2026-11-04:AC-08:Gemini for Workspace is Needs Review --> |
+| [ ] | 2026-11-04 10:28 | VIOLATION | Memory: leak.md | D-4 | API key or access token | Remove or mask the data at its source; escalate to Security/Privacy/Data Owner (AR-06) <!-- key:memory:leak.md:D-4:API key or access token:2509176719 --> |
+| [ ] | 2026-11-04 10:28 | VIOLATION | Memory: leak.md | D-4 | Password, secret or key assigned a value | Remove or mask the data at its source; escalate to Security/Privacy/Data Owner (AR-06) <!-- key:memory:leak.md:D-4:Password, secret or key assigned a value:2509176719 --> |
+| [ ] | 2026-11-04 10:28 | VIOLATION | File: exercises/ex05-upper/upper.sh | D-4 | Password, secret or key assigned a value | Remove or mask the data at its source; escalate to Security/Privacy/Data Owner (AR-06) <!-- key:file:exercises/ex05-upper/upper.sh:D-4:Password, secret or key assigned a value:320482229 --> |
+| [ ] | 2026-11-04 10:28 | NEEDS REVIEW | File: README.md | D-3 | Mentions confidential / secret / top-secret material | Check the data class, mask it or use synthetic data, get approval before using it with AI (sheet Data Policy) <!-- key:file:README.md:D-3:Mentions confidential / secret / top-secret material:4241021110 --> |
+| [ ] | 2026-11-04 10:28 | NEEDS REVIEW | File: README.md | D-5 | Mentions production or real customer data | Check the data class, mask it or use synthetic data, get approval before using it with AI (sheet Data Policy) <!-- key:file:README.md:D-5:Mentions production or real customer data:2302180741 --> |
